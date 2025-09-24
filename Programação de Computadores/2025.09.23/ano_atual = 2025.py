@@ -17,4 +17,4 @@ print(f'Você tem {idade} anos')
 
 print('Você nasceu em', ano_nascimento, 'e tem', idade, 'anos')
 print('Você nasceu em' + str(ano_nascimento) + 'e tem' + str(idade) + 'anos.')
-print(f'você nasceu em {ano_nascimento} e tem {idade}')
+print(f'você nasceu em {ano_nascimento} e tem {idade} anos.')
