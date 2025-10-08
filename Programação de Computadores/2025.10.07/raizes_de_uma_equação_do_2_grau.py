@@ -16,4 +16,4 @@ ValorC = float(input('Digite o valor de C: '))
 
 # Calcular o discriminante (delta) e, com base no valor de delta:
 
-floatDelta = 
+
