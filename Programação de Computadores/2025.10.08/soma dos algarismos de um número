@@ -1,0 +1,24 @@
+
+'''
+
+   Faça um programa que solicite ao usuário um número de até 4 dígitos inteiro positivo e exiba a soma dos seus algarismos.
+
+   Exemplo: 2456 = 17 (2 + 4 + 5 + 6)
+
+   DICA: Vocês irão usar o operador de divisão inteira (//) e o operador de resto de divisão inteiro (%)
+
+'''
+
+import sys
+num = int(input('Digite um número inteiro positivo de até 4 dígitos: '))
+if num < 0 or num > 9999:
+    sys.exit ('Número inválido. Por favor, digite um número entre 1 e 9999.')
+
+n1 = num // 1000 #milhar
+n2 = (num % 1000) // 100 #centena
+n3 = (num % 100) // 10  #dezena
+n4 = (num % 10) #unidade
+print(n1, n2, n3, n4)
+soma = n1 + n2 + n3 + n4
+print(f'A soma dos digitos é igual a: {soma}')
+
