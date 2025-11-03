@@ -46,6 +46,7 @@ Obtusângulo: Possui um ângulo interno maior que 90° (um ângulo obtuso)'''
 
 
 import sys
+import math
 
 try:
     
@@ -70,11 +71,11 @@ else:
   else:
     print ('Não é possível formar um triângulo com esses lados.')
 
-  if a == b and b == c:
-            classificacao_lados = "Equilátero (todos os lados iguais)"
-        elif a == b or b == c or a == c:
+  if float_Ladoa == float_Ladob and float_Ladob == float_Ladoc:
+          classificacao_lados = "Equilátero (todos os lados iguais)"
+  elif float_Ladoa == float_Ladob or float_Ladob == float_Ladoc or float_Ladoa == float_Ladoc:
             classificacao_lados = "Isósceles (dois lados iguais)"
-        else:
+  else:
             classificacao_lados = "Escaleno (todos os lados diferentes)"
             
-        print(f"Classificação (Lados): {classificacao_lados}")
+  print(f"Classificação (Lados): {classificacao_lados}")
